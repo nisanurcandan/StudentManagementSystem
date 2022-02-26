@@ -1,0 +1,7 @@
+C:\Users\nsa52\Desktop\StudentManagementSystem\StudentManagementSystem\StudentManagementSystem\bin\Debug\StudentManagementSystem.exe.config
+C:\Users\nsa52\Desktop\StudentManagementSystem\StudentManagementSystem\StudentManagementSystem\bin\Debug\StudentManagementSystem.exe
+C:\Users\nsa52\Desktop\StudentManagementSystem\StudentManagementSystem\StudentManagementSystem\bin\Debug\StudentManagementSystem.pdb
+C:\Users\nsa52\Desktop\StudentManagementSystem\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csprojAssemblyReference.cache
+C:\Users\nsa52\Desktop\StudentManagementSystem\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\nsa52\Desktop\StudentManagementSystem\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.exe
+C:\Users\nsa52\Desktop\StudentManagementSystem\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.pdb
