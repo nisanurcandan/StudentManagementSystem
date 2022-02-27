@@ -15,7 +15,13 @@ namespace StudentManagementSystem
                 2020, "female", "Turkish", DateTime.Parse("21.09.2002"));
 
             Console.WriteLine(std1.FullName);
-
+            Console.WriteLine(std1.id);
+            Console.WriteLine(std1.Email);
+            Console.WriteLine(std1.Department);
+            Console.WriteLine(std1.StartingYear);
+            Console.WriteLine(std1.Gender);
+            Console.WriteLine(std1.Nationality);
+            Console.WriteLine(std1.DateOfBirth);
         }
     }
 }
