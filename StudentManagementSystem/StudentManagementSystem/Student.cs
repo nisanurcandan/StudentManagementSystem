@@ -42,9 +42,46 @@ namespace StudentManagementSystem
             set { fullName = value; }
         }
 
+        public string id
+        {
+            get { return ID; }
+            set { ID = value; }
+        }
 
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
 
+        public Department Department
+        {
+            get { return department; }
+            set { department = value; }
+        }
 
+        public int StartingYear
+        {
+            get { return startingYear; }
+            set { startingYear = value; }
+        }
 
+        public string Gender
+        {
+            get { return gender; }
+            set { gender = value; }
+        }
+
+        public string Nationality
+        {
+            get { return nationality; }
+            set { nationality = value; }
+        }
+
+        public DateTime DateOfBirth
+        {
+            get { return dateOfBirth; }
+            set { dateOfBirth = value; }
+        }
     }
 }
