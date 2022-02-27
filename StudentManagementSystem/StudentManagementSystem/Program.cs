@@ -21,7 +21,7 @@ namespace StudentManagementSystem
             Console.WriteLine(std1.StartingYear);
             Console.WriteLine(std1.Gender);
             Console.WriteLine(std1.Nationality);
-            Console.WriteLine(std1.DateOfBirth);
+
         }
     }
 }
