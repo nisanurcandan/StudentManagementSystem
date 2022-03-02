@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentManagementSystem.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,22 +7,15 @@ using System.Threading.Tasks;
 
 namespace StudentManagementSystem
 {
-    class Student
+    class Student : User
     {
-        private string fullName;
-        private string ID;
-        private string phoneNumber;
-        private string email;
         private float GPA;
         private Department department;
         private int startingYear;
         private int graduateYear;
-        private string HES;
-        private string gender;
-        private string nationality;
-        private DateTime dateOfBirth;
 
-        public Student(string fullName, string ID, string email, Department department, int startingYear, string gender, string nationality, DateTime dateOfBirth)
+        public Student (string fullName, string ID, string email, Department department, int startingYear, Gender gender, string nationality, DateTime dateOfBirth)
+            : base(fullName, ID, email, gender, nationality, dateOfBirth)
         {
             
             this.fullName = fullName;
@@ -33,24 +27,6 @@ namespace StudentManagementSystem
             this.nationality = nationality;
             this.dateOfBirth = dateOfBirth;
 
-        }
-
-        public string FullName
-        {
-            get { return fullName; }
-            set { fullName = value; }
-        }
-
-        public string id
-        {
-            get { return ID; }
-            set { ID = value; }
-        }
-
-        public string Email
-        {
-            get { return email; }
-            set { email = value; }
         }
 
         public Department Department
@@ -65,22 +41,5 @@ namespace StudentManagementSystem
             set { startingYear = value; }
         }
 
-        public string Gender
-        {
-            get { return gender; }
-            set { gender = value; }
-        }
-
-        public string Nationality
-        {
-            get { return nationality; }
-            set { nationality = value; }
-        }
-
-        public DateTime DateOfBirth
-        {
-            get { return dateOfBirth; }
-            set { dateOfBirth = value; }
-        }
     }
 }
