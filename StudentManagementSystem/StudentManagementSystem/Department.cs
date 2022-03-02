@@ -50,8 +50,8 @@ namespace StudentManagementSystem
 
         public bool IsBachelor
         {
-            get { return IsBachelor; }
-            set { IsBachelor = value; }
+            get { return isBachelor; }
+            set { isBachelor = value; }
         }
 
         public string HeadOfDepartment
