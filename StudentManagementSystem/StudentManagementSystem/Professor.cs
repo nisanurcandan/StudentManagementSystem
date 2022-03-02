@@ -12,7 +12,7 @@ namespace StudentManagementSystem
         private string ID;
         private int workingYear;
         private int salary;
-        private string lectures;
+        private List<Lecture> lectures;
         private string email;
         private string phoneNumber;
         private string HES;
@@ -20,7 +20,7 @@ namespace StudentManagementSystem
         private string nationality;
         private DateTime dateOfBirth;
 
-        public Professor (string fullName, string ID, string email, int salary, string lectures, string gender, string nationality, DateTime dateOfBirth)
+        public Professor (string fullName, string ID, string email, int salary, List<Lecture> lectures, string gender, string nationality, DateTime dateOfBirth)
         {
             this.fullName = fullName;
             this.ID = ID;
@@ -57,7 +57,7 @@ namespace StudentManagementSystem
             set { salary = value; }
         }
 
-        public string Lectures
+        public List<Lecture> Lectures
         {
             get { return lectures; }
             set { lectures = value; }
