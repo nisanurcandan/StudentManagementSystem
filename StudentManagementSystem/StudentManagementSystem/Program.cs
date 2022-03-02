@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentManagementSystem.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,13 +27,14 @@ namespace StudentManagementSystem
 
 
             Professor pro1 = new Professor("Engin Kandıran", "201029001", "engin.kandiran@yeditepe.edu.tr",
-                15000, enginsLectures, "Male", "Turkish", DateTime.Parse("18.05.1982"));
+                15000, enginsLectures, Gender.Male, "Turkish", DateTime.Parse("18.05.1982"));
 
             Department dpt1 = new Department("Software Development","290", "College of Applied Sciences", true, pro1.FullName, 447.78224);
 
             Student std1 = new Student("Nisanur Candan", "20202905003", "nisanur.candan@std.yeditepe.edu.tr", dpt1,
-                2020, "female", "Turkish", DateTime.Parse("21.09.2002"));
+                2020, Gender.Female, "Turkish", DateTime.Parse("21.09.2002"));
 
+            
             Console.WriteLine(std1.FullName);
             Console.WriteLine(std1.id);
             Console.WriteLine(std1.Email);
@@ -72,6 +74,7 @@ namespace StudentManagementSystem
                 Console.WriteLine("*******************");
 
             }
+
 
 
 
