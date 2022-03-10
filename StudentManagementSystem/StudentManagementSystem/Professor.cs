@@ -13,8 +13,8 @@ namespace StudentManagementSystem
         private int salary;
         private List<Lecture> lectures;
 
-        public Professor (string fullName, string ID, string email, int salary, List<Lecture> lectures, Gender gender, string nationality, DateTime dateOfBirth) 
-            : base(fullName, ID, email, gender, nationality,dateOfBirth)
+        public Professor (string fullName, string ID, string password, string email, int salary, List<Lecture> lectures, Gender gender, string nationality, DateTime dateOfBirth) 
+            : base(fullName, ID, password, email, gender, nationality,dateOfBirth)
         {
             this.fullName = fullName;
             this.ID = ID;

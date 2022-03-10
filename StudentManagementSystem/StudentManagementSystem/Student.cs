@@ -14,8 +14,8 @@ namespace StudentManagementSystem
         private int startingYear;
         private int graduateYear;
 
-        public Student (string fullName, string ID, string email, Department department, int startingYear, Gender gender, string nationality, DateTime dateOfBirth)
-            : base(fullName, ID, email, gender, nationality, dateOfBirth)
+        public Student (string fullName, string ID, string password, string email, Department department, int startingYear, Gender gender, string nationality, DateTime dateOfBirth)
+            : base(fullName, ID, password, email, gender, nationality, dateOfBirth)
         {
             
             this.fullName = fullName;

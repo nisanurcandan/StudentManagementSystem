@@ -11,6 +11,7 @@ namespace StudentManagementSystem
     {
         public string fullName;
         public string ID;
+        public string password;
         public Gender gender;
         public string nationality;
         public DateTime dateOfBirth;
@@ -19,10 +20,11 @@ namespace StudentManagementSystem
         public string HES;
 
 
-        public User(string fullName, string ID, string email, Gender gender, string nationality, DateTime dateOfBirth)
+        public User(string fullName, string ID, string password, string email, Gender gender, string nationality, DateTime dateOfBirth)
         {
             this.fullName = fullName;
             this.ID = ID;
+            this.password = password;
             this.email = email;
             this.gender = gender;
             this.nationality = nationality;
@@ -41,6 +43,11 @@ namespace StudentManagementSystem
             get { return ID; }
             set { ID = value; }
 
+        }
+        public string Password
+        {
+            get { return password; }
+            set { password = value; }
         }
 
         public string Email
@@ -66,6 +73,7 @@ namespace StudentManagementSystem
             get { return dateOfBirth; }
             set { dateOfBirth = value; }
         }
+
     }
 
 }
