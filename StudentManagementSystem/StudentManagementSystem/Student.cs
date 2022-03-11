@@ -15,9 +15,9 @@ namespace StudentManagementSystem
         private int startingYear;
         private int graduateYear;
         private List<Lecture> lectures;
-        private Dictionary<Lecture, LectureGrades> grades = new Dictionary<Lecture, LectureGrades>();
+        private Dictionary<Lecture, LetterGrades> grades = new Dictionary<Lecture, LetterGrades>();
 
-        public Student(string fullName, string ID, string password, string email, Department department, int startingYear, List<Lecture> lectures, Dictionary<Lecture, LectureGrades> grades, Gender gender, string nationality, DateTime dateOfBirth)
+        public Student(string fullName, string ID, string password, string email, Department department, int startingYear, List<Lecture> lectures, Dictionary<Lecture, LetterGrades> grades, Gender gender, string nationality, DateTime dateOfBirth)
             : base(fullName, ID, password, email, gender, nationality, dateOfBirth)
         {
 
@@ -52,7 +52,7 @@ namespace StudentManagementSystem
             set { lectures = value; }
         }
 
-        public Dictionary<Lecture, LectureGrades> Grades
+        public Dictionary<Lecture, LetterGrades> Grades
         {
             get { return grades; }
             set { grades = value; }

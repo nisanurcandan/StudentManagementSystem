@@ -8,7 +8,7 @@ namespace StudentManagementSystem
 {
     class LoginScreenController
     {
-        LoginScreenController _instance = new LoginScreenController();
+        public static LoginScreenController _instance = new LoginScreenController();
 
         public static string id;
         public static string password;
@@ -26,7 +26,7 @@ namespace StudentManagementSystem
             Console.WriteLine("***************STUDENT MANAGEMENT SYSTEM***************\n");
             Console.WriteLine("Enter your ID: ");
             id = Console.ReadLine();
-            Console.WriteLine("Enter your ID: ");
+            Console.WriteLine("Enter your password: ");
             password = Console.ReadLine();
 
             LoginScreenManager._instance.UserAuthentication();

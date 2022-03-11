@@ -44,10 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefaultData.cs" />
     <Compile Include="Department.cs" />
     <Compile Include="Enums\Gender.cs" />
     <Compile Include="Enums\LetterGrades.cs" />
     <Compile Include="Lecture.cs" />
+    <Compile Include="LoginScreenController.cs" />
+    <Compile Include="LoginScreenManager.cs" />
     <Compile Include="Professor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
