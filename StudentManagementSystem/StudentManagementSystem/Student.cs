@@ -9,20 +9,25 @@ namespace StudentManagementSystem
 {
     class Student : User
     {
+        
         private float GPA;
         private Department department;
         private int startingYear;
         private int graduateYear;
+        private List<Lecture> lectures;
+        private Dictionary<Lecture, LectureGrades> grades = new Dictionary<Lecture, LectureGrades>();
 
-        public Student (string fullName, string ID, string password, string email, Department department, int startingYear, Gender gender, string nationality, DateTime dateOfBirth)
+        public Student(string fullName, string ID, string password, string email, Department department, int startingYear, List<Lecture> lectures, Dictionary<Lecture, LectureGrades> grades, Gender gender, string nationality, DateTime dateOfBirth)
             : base(fullName, ID, password, email, gender, nationality, dateOfBirth)
         {
-            
+
             this.fullName = fullName;
             this.ID = ID;
             this.email = email;
             this.department = department;
             this.startingYear = startingYear;
+            this.lectures = lectures;
+            this.grades = grades;
             this.gender = gender;
             this.nationality = nationality;
             this.dateOfBirth = dateOfBirth;
@@ -41,5 +46,16 @@ namespace StudentManagementSystem
             set { startingYear = value; }
         }
 
+        public List<Lecture> Lectures
+        {
+            get { return lectures; }
+            set { lectures = value; }
+        }
+
+        public Dictionary<Lecture, LectureGrades> Grades
+        {
+            get { return grades; }
+            set { grades = value; }
+        }
     }
 }

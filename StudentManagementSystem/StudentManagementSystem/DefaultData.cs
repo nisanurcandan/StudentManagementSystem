@@ -35,6 +35,16 @@ namespace StudentManagementSystem
             aşkınsLectures.Add(lct4);
             aşkınsLectures.Add(lct6);
 
+            List<Lecture> nisasLectures = new List<Lecture>();
+            nisasLectures.Add(lct1);
+            nisasLectures.Add(lct2);
+            nisasLectures.Add(lct4);
+
+            List<Lecture> mertsLectures = new List<Lecture>();
+            mertsLectures.Add(lct3);
+            mertsLectures.Add(lct5);
+            mertsLectures.Add(lct6);
+
             Professor pro1 = new Professor("Engin Kandıran", "123", "201029001", "engin.kandiran@yeditepe.edu.tr",
                 15000, enginsLectures, Gender.Male, "Turkish", DateTime.Parse("18.05.1982"));
 
@@ -44,10 +54,10 @@ namespace StudentManagementSystem
             Department dpt1 = new Department("Software Development", "290", "College of Applied Sciences", true, pro1.FullName, 447.78224);
 
             Student std1 = new Student("Nisanur Candan", "123", "20202905003", "nisanur.candan@std.yeditepe.edu.tr", dpt1,
-                2020, Gender.Female, "Turkish", DateTime.Parse("21.09.2002"));
+                2020, nisasLectures, Gender.Female, "Turkish", DateTime.Parse("21.09.2002"));
 
             Student std2 = new Student("Mert Sancar", "123", "20192905004", "mert.sancar@std.yeditepe.edu.tr", dpt1,
-                2019, Gender.Male, "Turkish", DateTime.Parse("22.01.2001"));
+                2019, mertsLectures, Gender.Male, "Turkish", DateTime.Parse("22.01.2001"));
 
 
             professors.Add(pro1);

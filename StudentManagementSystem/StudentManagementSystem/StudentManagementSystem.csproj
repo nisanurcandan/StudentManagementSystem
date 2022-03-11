@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Department.cs" />
     <Compile Include="Enums\Gender.cs" />
+    <Compile Include="Enums\LetterGrades.cs" />
     <Compile Include="Lecture.cs" />
     <Compile Include="Professor.cs" />
     <Compile Include="Program.cs" />
@@ -56,5 +57,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

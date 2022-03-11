@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentManagementSystem.Enums
 {
-    enum LetterGrades
+    enum LectureGrades
     {
         AA, BA, BB, CB, CC, DC, DD, FF, FA
     }
