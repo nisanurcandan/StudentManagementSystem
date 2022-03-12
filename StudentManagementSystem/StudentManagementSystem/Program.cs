@@ -15,11 +15,10 @@ namespace StudentManagementSystem
 
         static void Main(string[] args)
         {
-            
 
 
-            //DefaultData defaultData = new DefaultData();
-            //LoginScreenController._instance.LoginScreen();
+            DefaultData defaultData = new DefaultData();
+            LoginScreenController._instance.LoginScreen();
 
 
 

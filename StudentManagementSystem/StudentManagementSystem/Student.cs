@@ -17,7 +17,7 @@ namespace StudentManagementSystem
         private List<Lecture> lectures;
         private Dictionary<Lecture, LetterGrades> grades = new Dictionary<Lecture, LetterGrades>();
 
-        public Student(string fullName, string ID, string password, string email, Department department, int startingYear, List<Lecture> lectures, Dictionary<Lecture, LetterGrades> grades, Gender gender, string nationality, DateTime dateOfBirth)
+        public Student(string fullName, string ID, string password, string email, Department department, int startingYear, List<Lecture> lectures, Dictionary<Lecture, LetterGrades> grades, float GPA, Gender gender, string nationality, DateTime dateOfBirth)
             : base(fullName, ID, password, email, gender, nationality, dateOfBirth)
         {
 
@@ -28,6 +28,7 @@ namespace StudentManagementSystem
             this.startingYear = startingYear;
             this.lectures = lectures;
             this.grades = grades;
+            this.GPA = GPA;
             this.gender = gender;
             this.nationality = nationality;
             this.dateOfBirth = dateOfBirth;
@@ -56,6 +57,19 @@ namespace StudentManagementSystem
         {
             get { return grades; }
             set { grades = value; }
+        }
+
+        public override void ShowMyAcademicInfo()
+        {
+            Console.WriteLine("Department: " + department.Name);
+            Console.WriteLine("Starting Year: " + startingYear);
+            Console.WriteLine("Graduate Year (Approximately): " + (startingYear+4));
+            Console.WriteLine("GPA: " + GPA);
+            Console.WriteLine("--------------------------------------");
+            for (int i = 0; i < lectures.Count; i++)
+            {
+                Console.WriteLine("Lecture ID: " + lectures[i].id + "   " + "Grade: " + grades[lectures[i]]);
+            }
         }
     }
 }

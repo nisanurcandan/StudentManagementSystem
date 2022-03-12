@@ -74,6 +74,21 @@ namespace StudentManagementSystem
             set { dateOfBirth = value; }
         }
 
+        public void ShowMyPersonalInfo()
+        {
+            Console.WriteLine("Fullname: " + fullName);
+            Console.WriteLine("ID: " + ID);
+            Console.WriteLine("E-mail: " + email); ;
+            Console.WriteLine("Gender: " + gender);
+            Console.WriteLine("Nationality: " + nationality);
+            Console.WriteLine("Birth Date: " + dateOfBirth);
+        }
+
+        public virtual void ShowMyAcademicInfo()
+        {
+
+        }
+
     }
 
 }

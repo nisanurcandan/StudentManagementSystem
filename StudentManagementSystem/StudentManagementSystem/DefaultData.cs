@@ -40,24 +40,35 @@ namespace StudentManagementSystem
             nisasLectures.Add(lct2);
             nisasLectures.Add(lct4);
 
+            Dictionary<Lecture, LetterGrades> nisaLetterGrades = new Dictionary<Lecture, LetterGrades>();
+            nisaLetterGrades.Add(lct1, LetterGrades.AA);
+            nisaLetterGrades.Add(lct2, LetterGrades.CB);
+            nisaLetterGrades.Add(lct4, LetterGrades.BB);
+
             List<Lecture> mertsLectures = new List<Lecture>();
             mertsLectures.Add(lct3);
             mertsLectures.Add(lct5);
             mertsLectures.Add(lct6);
 
-            Professor pro1 = new Professor("Engin Kandıran", "123", "201029001", "engin.kandiran@yeditepe.edu.tr",
+            Dictionary<Lecture, LetterGrades> mertLetterGrades = new Dictionary<Lecture, LetterGrades>();
+            mertLetterGrades.Add(lct3, LetterGrades.AA);
+            mertLetterGrades.Add(lct5, LetterGrades.BA);
+            mertLetterGrades.Add(lct6, LetterGrades.FF);
+
+
+            Professor pro1 = new Professor("Engin Kandıran", "201029001", "123",  "engin.kandiran@yeditepe.edu.tr",
                 15000, enginsLectures, Gender.Male, "Turkish", DateTime.Parse("18.05.1982"));
 
-            Professor pro2 = new Professor("Aşkın Demirağ", "123", "2008390201", "aşkın.demirağ@yeditepe.edu.tr",
+            Professor pro2 = new Professor("Aşkın Demirağ", "2008390201", "123",  "aşkın.demirağ@yeditepe.edu.tr",
                 15500, aşkınsLectures, Gender.Male, "Turkish", DateTime.Parse("23.11.1980"));
 
             Department dpt1 = new Department("Software Development", "290", "College of Applied Sciences", true, pro1.FullName, 447.78224);
 
-            Student std1 = new Student("Nisanur Candan", "123", "20202905003", "nisanur.candan@std.yeditepe.edu.tr", dpt1,
-                2020, nisasLectures, Gender.Female, "Turkish", DateTime.Parse("21.09.2002"));
+            Student std1 = new Student("Nisanur Candan", "20202905003", "123",  "nisanur.candan@std.yeditepe.edu.tr", dpt1,
+                2020, nisasLectures, nisaLetterGrades, 2.95f, Gender.Female, "Turkish", DateTime.Parse("21.09.2002"));
 
-            Student std2 = new Student("Mert Sancar", "123", "20192905004", "mert.sancar@std.yeditepe.edu.tr", dpt1,
-                2019, mertsLectures, Gender.Male, "Turkish", DateTime.Parse("22.01.2001"));
+            Student std2 = new Student("Mert Sancar", "20192905004", "123" , "mert.sancar@std.yeditepe.edu.tr", dpt1,
+                2019, mertsLectures, mertLetterGrades, 3.60f, Gender.Male, "Turkish", DateTime.Parse("22.01.2001"));
 
 
             professors.Add(pro1);

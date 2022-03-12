@@ -39,6 +39,16 @@ namespace StudentManagementSystem
             set { lectures = value; }
         }
 
+        public override void ShowMyAcademicInfo()
+        {
+
+            for (int i = 0; i < lectures.Count; i++)
+            {
+                Console.WriteLine("------------------------------------");
+                Console.WriteLine("Index          ID         Name         Is Online");
+                Console.WriteLine((i + 1) + lectures[i].id + "   " + lectures[i].Name + "   " + lectures[i].IsOnline);
+            }
+        }
 
     }
 

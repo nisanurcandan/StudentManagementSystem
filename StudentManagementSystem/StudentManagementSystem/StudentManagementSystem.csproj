@@ -46,11 +46,16 @@
   <ItemGroup>
     <Compile Include="DefaultData.cs" />
     <Compile Include="Department.cs" />
+    <Compile Include="CurrentUser.cs" />
     <Compile Include="Enums\Gender.cs" />
     <Compile Include="Enums\LetterGrades.cs" />
+    <Compile Include="Enums\UserType.cs" />
+    <Compile Include="IUser.cs" />
     <Compile Include="Lecture.cs" />
     <Compile Include="LoginScreenController.cs" />
     <Compile Include="LoginScreenManager.cs" />
+    <Compile Include="MainScreenController.cs" />
+    <Compile Include="MainScreenManager.cs" />
     <Compile Include="Professor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
