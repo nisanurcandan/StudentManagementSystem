@@ -10,16 +10,16 @@ namespace StudentManagementSystem
     {
         private string name;
         private string ID;
-        private string headOfDepartment;
-        private string secretaryOfDepartment;
-        private bool isBachelor;
-        private int studentCount;
         private string faculty;
+        private bool isBachelor;
+        private string headOfDepartment;
         private double examScore;
+        private string secretaryOfDepartment;
+        private int studentCount;
         private List<string> erasmusCountry;
 
 
-        public Department(string name, string ID, string faculty, bool isBachelor, string headOfDepartment, double examScore) 
+        public Department(string name, string ID, string faculty, bool isBachelor, string headOfDepartment, double examScore, string secretaryOfDepartment, int studentCount, List<string> erasmusCountry) 
         {
             this.name = name;
             this.ID = ID;
@@ -27,7 +27,9 @@ namespace StudentManagementSystem
             this.isBachelor = isBachelor;
             this.headOfDepartment = headOfDepartment;
             this.examScore = examScore;
-            
+            this.secretaryOfDepartment = secretaryOfDepartment;
+            this.studentCount = studentCount;
+            this.erasmusCountry = erasmusCountry;     
         }
 
         public string Name
@@ -66,6 +68,23 @@ namespace StudentManagementSystem
             set { examScore = value; }
         }
 
+        public string SecretaryOfDepartment
+        {
+            get { return secretaryOfDepartment; }
+            set { secretaryOfDepartment = value; }
+        }
+
+        public int StudentCount
+        {
+            get { return studentCount; }
+            set { studentCount = value; }
+        }
+
+        public List<string> ErasmusCountry
+        {
+            get { return erasmusCountry; }
+            set { erasmusCountry = value; }
+        }
 
     }
 }

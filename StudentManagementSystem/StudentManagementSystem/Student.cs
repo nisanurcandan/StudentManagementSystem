@@ -17,15 +17,17 @@ namespace StudentManagementSystem
         private List<Lecture> lectures;
         private Dictionary<Lecture, LetterGrades> grades = new Dictionary<Lecture, LetterGrades>();
 
-        public Student(string fullName, string ID, string password, string email, Department department, int startingYear, List<Lecture> lectures, Dictionary<Lecture, LetterGrades> grades, float GPA, Gender gender, string nationality, DateTime dateOfBirth)
+        public Student(string fullName, string ID, string password, string email, Department department, int startingYear, int graduateYear, List<Lecture> lectures, Dictionary<Lecture, LetterGrades> grades, float GPA, Gender gender, string nationality, DateTime dateOfBirth)
             : base(fullName, ID, password, email, gender, nationality, dateOfBirth)
         {
 
             this.fullName = fullName;
             this.ID = ID;
+            this.password = password;
             this.email = email;
             this.department = department;
             this.startingYear = startingYear;
+            this.graduateYear = graduateYear;
             this.lectures = lectures;
             this.grades = grades;
             this.GPA = GPA;
@@ -45,6 +47,12 @@ namespace StudentManagementSystem
         {
             get { return startingYear; }
             set { startingYear = value; }
+        }
+
+        public int GraduateYear
+        {
+            get { return graduateYear; }
+            set { graduateYear = value; }
         }
 
         public List<Lecture> Lectures

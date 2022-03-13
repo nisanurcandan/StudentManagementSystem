@@ -16,14 +16,14 @@ namespace StudentManagementSystem
 
         public DefaultData()
         {
-            Lecture lct1 = new Lecture("Temel Bilgi Teknolojileri", "COMP101", true);
-            Lecture lct2 = new Lecture("Veri Yapıları ve Algoritmalar", "COMP201", false);
-            Lecture lct3 = new Lecture("Tasarım Desenleri", "COMP202", false);
-            Lecture lct4 = new Lecture("Staj 1", "COMP290", true);
-            Lecture lct5 = new Lecture("Yazılım Mimarisi ve Araçları", "COMP301", true);
-            Lecture lct6 = new Lecture("Staj 2", "COMP390", true);
-            Lecture lct7 = new Lecture("Bilişim Hukuku", "COMP401", false);
-            Lecture lct8 = new Lecture("Bitirme Projesi", "COMP498", true);
+            Lecture lct1 = new Lecture("Temel Bilgi Teknolojileri", "COMP101", true, 1, 2);
+            Lecture lct2 = new Lecture("Veri Yapıları ve Algoritmalar", "COMP201", false, 3, 1);
+            Lecture lct3 = new Lecture("Tasarım Desenleri", "COMP202", false, 2, 1);
+            Lecture lct4 = new Lecture("Staj 1", "COMP290", true, 2, 2);
+            Lecture lct5 = new Lecture("Yazılım Mimarisi ve Araçları", "COMP301", true, 2, 3);
+            Lecture lct6 = new Lecture("Staj 2", "COMP390", true, 2, 1);
+            Lecture lct7 = new Lecture("Bilişim Hukuku", "COMP401", false, 1, 2);
+            Lecture lct8 = new Lecture("Bitirme Projesi", "COMP498", true, 2, 1);
 
             List<Lecture> enginsLectures = new List<Lecture>();
             enginsLectures.Add(lct2);
@@ -39,6 +39,8 @@ namespace StudentManagementSystem
             nisasLectures.Add(lct1);
             nisasLectures.Add(lct2);
             nisasLectures.Add(lct4);
+
+            List<string> erasmusCountry = new List<string>();
 
             Dictionary<Lecture, LetterGrades> nisaLetterGrades = new Dictionary<Lecture, LetterGrades>();
             nisaLetterGrades.Add(lct1, LetterGrades.AA);
@@ -57,18 +59,18 @@ namespace StudentManagementSystem
 
 
             Professor pro1 = new Professor("Engin Kandıran", "201029001", "123",  "engin.kandiran@yeditepe.edu.tr",
-                15000, enginsLectures, Gender.Male, "Turkish", DateTime.Parse("18.05.1982"));
+                15000, enginsLectures, Gender.Male, "Turkish", DateTime.Parse("18.05.1982"), 12);
 
             Professor pro2 = new Professor("Aşkın Demirağ", "2008390201", "123",  "aşkın.demirağ@yeditepe.edu.tr",
-                15500, aşkınsLectures, Gender.Male, "Turkish", DateTime.Parse("23.11.1980"));
+                15500, aşkınsLectures, Gender.Male, "Turkish", DateTime.Parse("23.11.1980"), 14);
 
-            Department dpt1 = new Department("Software Development", "290", "College of Applied Sciences", true, pro1.FullName, 447.78224);
+            Department dpt1 = new Department("Software Development", "290", "College of Applied Sciences", true, pro1.FullName, 447.78224, "Ebru Hoca", 2, erasmusCountry);
 
             Student std1 = new Student("Nisanur Candan", "20202905003", "123",  "nisanur.candan@std.yeditepe.edu.tr", dpt1,
-                2020, nisasLectures, nisaLetterGrades, 2.95f, Gender.Female, "Turkish", DateTime.Parse("21.09.2002"));
+                2020, 2024, nisasLectures, nisaLetterGrades, 2.95f, Gender.Female, "Turkish", DateTime.Parse("21.09.2002"));
 
             Student std2 = new Student("Mert Sancar", "20192905004", "123" , "mert.sancar@std.yeditepe.edu.tr", dpt1,
-                2019, mertsLectures, mertLetterGrades, 3.60f, Gender.Male, "Turkish", DateTime.Parse("22.01.2001"));
+                2019, 2023, mertsLectures, mertLetterGrades, 3.60f, Gender.Male, "Turkish", DateTime.Parse("22.01.2001"));
 
 
             professors.Add(pro1);

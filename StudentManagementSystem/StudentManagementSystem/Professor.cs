@@ -9,21 +9,23 @@ namespace StudentManagementSystem
 {
     class Professor : User
     {
-        private int workingYear;
         private int salary;
         private List<Lecture> lectures;
+        private int workingYear;
 
-        public Professor (string fullName, string ID, string password, string email, int salary, List<Lecture> lectures, Gender gender, string nationality, DateTime dateOfBirth) 
+        public Professor (string fullName, string ID, string password, string email, int salary, List<Lecture> lectures, Gender gender, string nationality, DateTime dateOfBirth,  int workingYear) 
             : base(fullName, ID, password, email, gender, nationality,dateOfBirth)
         {
             this.fullName = fullName;
             this.ID = ID;
+            this.password = password;
             this.email = email;
             this.salary = salary;
             this.lectures = lectures;
             this.gender = gender;
             this.nationality = nationality;
             this.dateOfBirth = dateOfBirth;
+            this.workingYear = workingYear;
         }
 
 
@@ -39,6 +41,11 @@ namespace StudentManagementSystem
             set { lectures = value; }
         }
 
+        public int WorkingYear
+        {
+            get { return workingYear; }
+            set { workingYear = value; }
+        }
         public override void ShowMyAcademicInfo()
         {
 
