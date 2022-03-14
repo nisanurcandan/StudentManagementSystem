@@ -13,8 +13,8 @@ namespace StudentManagementSystem
         private List<Lecture> lectures;
         private int workingYear;
 
-        public Professor (string fullName, string ID, string password, string email, int salary, List<Lecture> lectures, Gender gender, string nationality, DateTime dateOfBirth,  int workingYear) 
-            : base(fullName, ID, password, email, gender, nationality,dateOfBirth)
+        public Professor(string fullName, string ID, string password, string email, int salary, List<Lecture> lectures, Gender gender, string nationality, DateTime dateOfBirth, int workingYear)
+            : base(fullName, ID, password, email, gender, nationality, dateOfBirth)
         {
             this.fullName = fullName;
             this.ID = ID;
@@ -55,6 +55,22 @@ namespace StudentManagementSystem
                 Console.WriteLine("Index          ID         Name         Is Online");
                 Console.WriteLine((i + 1) + lectures[i].id + "   " + lectures[i].Name + "   " + lectures[i].IsOnline);
             }
+        }
+
+        public void GetTopStudent()
+        {
+            float maxGPA = 0.0f;
+            Student topStudent=null;
+            for (int i = 0; i < DefaultData.students.Count; i++)
+            {
+                if (maxGPA<=DefaultData.students[i].gpa)
+                {
+                    maxGPA = DefaultData.students[i].gpa;
+                    topStudent = DefaultData.students[i];
+                }   
+            }
+            topStudent.ShowMyPersonalInfo();
+            topStudent.ShowMyAcademicInfo();
         }
 
     }

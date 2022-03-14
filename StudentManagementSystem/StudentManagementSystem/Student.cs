@@ -37,6 +37,12 @@ namespace StudentManagementSystem
 
         }
 
+        public float gpa
+        {
+            get { return GPA; }
+            set { value = GPA; }
+        }
+
         public Department Department
         {
             get { return department; }
