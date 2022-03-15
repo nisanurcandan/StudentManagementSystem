@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace StudentManagementSystem
 {
@@ -17,27 +18,16 @@ namespace StudentManagementSystem
         {
         }
 
-        public void LoginScreen()
+        public void UserAuthentication(string id, string password)
         {
-            Console.Clear();
-            Console.WriteLine("***************STUDENT MANAGEMENT SYSTEM***************\n");
-            Console.WriteLine("Enter your ID: ");
-            CurrentUser.id = Console.ReadLine();
-            Console.WriteLine("Enter your password: ");
-            CurrentUser.password = Console.ReadLine();
-
-            bool isValid = LoginScreenManager._instance.UserAuthentication(CurrentUser.id, CurrentUser.password);
+            bool isValid = LoginScreenManager._instance.UserAuthentication(id, password);
             if (isValid)
             {
-                MainScreenController._instance.MainScreen();
+                MessageBox.Show("OK");
             }
             else
             {
-                Console.WriteLine("Invalid ID or password");
-                Console.WriteLine("Press any key to try again...");
-                var ans = Console.ReadLine();
-                LoginScreen();
-
+                MessageBox.Show("NO");
             }
 
             

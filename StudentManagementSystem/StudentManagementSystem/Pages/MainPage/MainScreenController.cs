@@ -62,7 +62,7 @@ namespace StudentManagementSystem
                     MainScreenManager._instance.ShowMyAcademicInfo();
                     break;
                 case "3":
-                    LoginScreenController._instance.LoginScreen();
+                    //LoginScreenController._instance.LoginScreen();
                     break;
                 default:
                     MainScreenStudent();
@@ -85,7 +85,7 @@ namespace StudentManagementSystem
                     MainScreenManager._instance.GetTopStudentInfo();
                     break;
                 case "4":
-                    LoginScreenController._instance.LoginScreen();
+                    //LoginScreenController._instance.LoginScreen();
                     break;
                 default:
                     MainScreenProfessor();
