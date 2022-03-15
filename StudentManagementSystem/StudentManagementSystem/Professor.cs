@@ -57,22 +57,6 @@ namespace StudentManagementSystem
             }
         }
 
-        public void GetTopStudent()
-        {
-            float maxGPA = 0.0f;
-            Student topStudent=null;
-            for (int i = 0; i < DefaultData.students.Count; i++)
-            {
-                if (maxGPA<=DefaultData.students[i].gpa)
-                {
-                    maxGPA = DefaultData.students[i].gpa;
-                    topStudent = DefaultData.students[i];
-                }   
-            }
-            topStudent.ShowMyPersonalInfo();
-            topStudent.ShowMyAcademicInfo();
-        }
-
     }
 
 }
