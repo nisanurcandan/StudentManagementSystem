@@ -19,8 +19,7 @@ namespace StudentManagementSystem
 
         public Student(string fullName, string ID, string password, string email, Department department, int startingYear, int graduateYear, List<Lecture> lectures, Dictionary<Lecture, LetterGrades> grades, Gender gender, string nationality, DateTime dateOfBirth)
             : base(fullName, ID, password, email, gender, nationality, dateOfBirth)
-        {
-
+        { 
             this.fullName = fullName;
             this.ID = ID;
             this.password = password;
@@ -34,7 +33,6 @@ namespace StudentManagementSystem
             this.nationality = nationality;
             this.dateOfBirth = dateOfBirth;
             CalculateGPA();
-
         }
 
         public Department Department

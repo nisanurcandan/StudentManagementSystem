@@ -1,4 +1,5 @@
 ﻿using StudentManagementSystem.Enums;
+using StudentManagementSystem.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -73,6 +74,9 @@ namespace StudentManagementSystem
 
             Student std2 = new Student("Mert Sancar", "20192905004", "123" , "mert.sancar@std.yeditepe.edu.tr", dpt1,
                 2019, 2023, mertsLectures, mertLetterGrades, Gender.Male, "Turkish", DateTime.Parse("22.01.2001"));
+
+
+            Student std3 = UserFactory.Factory(UserType.Student);
 
 
             professors.Add(pro1);
