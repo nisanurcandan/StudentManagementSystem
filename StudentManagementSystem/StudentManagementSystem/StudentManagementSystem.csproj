@@ -62,11 +62,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\DefaultData.cs" />
-    <Compile Include="Model\Department.cs" />
-    <Compile Include="Model\CurrentUser.cs" />
     <Compile Include="Enums\Gender.cs" />
     <Compile Include="Enums\LetterGrades.cs" />
     <Compile Include="Enums\UserType.cs" />
+    <Compile Include="Model\Department.cs" />
+    <Compile Include="Model\CurrentUser.cs" />
     <Compile Include="Model\IUser.cs" />
     <Compile Include="Model\Lecture.cs" />
     <Compile Include="Pages\LoginPage\LoginScreen.cs">

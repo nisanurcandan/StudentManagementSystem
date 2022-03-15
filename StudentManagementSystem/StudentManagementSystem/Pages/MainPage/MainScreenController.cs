@@ -17,7 +17,8 @@ namespace StudentManagementSystem
             Console.Clear();
             Console.WriteLine("1) Personal Informations");
             Console.WriteLine("2) Academic Informations");
-            Console.WriteLine("3) Back");
+            Console.WriteLine("3) Get Top Student in University");
+            Console.WriteLine("4) Back");
             Console.WriteLine("Chose one of them");
             answer = Console.ReadLine();
             ShowNewScreen();
@@ -35,6 +36,9 @@ namespace StudentManagementSystem
                     MainScreenManager._instance.ShowMyAcademicInfo();
                     break;
                 case "3":
+                    MainScreenManager._instance.GetTopStudentInfo();
+                    break;
+                case "4":
                     LoginScreenController._instance.LoginScreen();
                     break;
                 default:

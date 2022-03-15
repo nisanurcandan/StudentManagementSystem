@@ -10,14 +10,14 @@ namespace StudentManagementSystem
     class Student : User
     {
         
-        private float GPA;
+        private float gpa;
         private Department department;
         private int startingYear;
         private int graduateYear;
         private List<Lecture> lectures;
         private Dictionary<Lecture, LetterGrades> grades = new Dictionary<Lecture, LetterGrades>();
 
-        public Student(string fullName, string ID, string password, string email, Department department, int startingYear, int graduateYear, List<Lecture> lectures, Dictionary<Lecture, LetterGrades> grades, float GPA, Gender gender, string nationality, DateTime dateOfBirth)
+        public Student(string fullName, string ID, string password, string email, Department department, int startingYear, int graduateYear, List<Lecture> lectures, Dictionary<Lecture, LetterGrades> grades, float gpa, Gender gender, string nationality, DateTime dateOfBirth)
             : base(fullName, ID, password, email, gender, nationality, dateOfBirth)
         {
 
@@ -30,7 +30,7 @@ namespace StudentManagementSystem
             this.graduateYear = graduateYear;
             this.lectures = lectures;
             this.grades = grades;
-            this.GPA = GPA;
+            this.gpa = gpa;
             this.gender = gender;
             this.nationality = nationality;
             this.dateOfBirth = dateOfBirth;
@@ -41,6 +41,12 @@ namespace StudentManagementSystem
         {
             get { return department; }
             set { department = value; }
+        }
+
+        public float Gpa
+        {
+            get { return gpa; }
+            set { gpa = value; }
         }
 
         public int StartingYear
@@ -72,7 +78,7 @@ namespace StudentManagementSystem
             Console.WriteLine("Department: " + department.Name);
             Console.WriteLine("Starting Year: " + startingYear);
             Console.WriteLine("Graduate Year (Approximately): " + (startingYear+4));
-            Console.WriteLine("GPA: " + GPA);
+            Console.WriteLine("GPA: " + Gpa);
             Console.WriteLine("--------------------------------------");
             for (int i = 0; i < lectures.Count; i++)
             {
