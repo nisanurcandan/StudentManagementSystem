@@ -39,6 +39,7 @@ namespace StudentManagementSystem
             nisasLectures.Add(lct1);
             nisasLectures.Add(lct2);
             nisasLectures.Add(lct4);
+            nisasLectures.Add(lct8);
 
             List<string> erasmusCountry = new List<string>();
 
@@ -46,6 +47,7 @@ namespace StudentManagementSystem
             nisaLetterGrades.Add(lct1, LetterGrades.AA);
             nisaLetterGrades.Add(lct2, LetterGrades.CB);
             nisaLetterGrades.Add(lct4, LetterGrades.BB);
+            nisaLetterGrades.Add(lct8, LetterGrades.AA);
 
             List<Lecture> mertsLectures = new List<Lecture>();
             mertsLectures.Add(lct3);
@@ -67,10 +69,10 @@ namespace StudentManagementSystem
             Department dpt1 = new Department("Software Development", "290", "College of Applied Sciences", true, pro1.FullName, 447.78224, "Ebru Hoca", 2, erasmusCountry);
 
             Student std1 = new Student("Nisanur Candan", "20202905003", "123",  "nisanur.candan@std.yeditepe.edu.tr", dpt1,
-                2020, 2024, nisasLectures, nisaLetterGrades, 2.95f, Gender.Female, "Turkish", DateTime.Parse("21.09.2002"));
+                2020, 2024, nisasLectures, nisaLetterGrades, Gender.Female, "Turkish", DateTime.Parse("21.09.2002"));
 
             Student std2 = new Student("Mert Sancar", "20192905004", "123" , "mert.sancar@std.yeditepe.edu.tr", dpt1,
-                2019, 2023, mertsLectures, mertLetterGrades, 3.60f, Gender.Male, "Turkish", DateTime.Parse("22.01.2001"));
+                2019, 2023, mertsLectures, mertLetterGrades, Gender.Male, "Turkish", DateTime.Parse("22.01.2001"));
 
 
             professors.Add(pro1);
