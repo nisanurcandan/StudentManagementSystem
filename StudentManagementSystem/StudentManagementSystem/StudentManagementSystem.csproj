@@ -59,23 +59,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DefaultData.cs" />
-    <Compile Include="Department.cs" />
-    <Compile Include="CurrentUser.cs" />
+    <Compile Include="Database\DefaultData.cs" />
+    <Compile Include="Model\Department.cs" />
+    <Compile Include="Model\CurrentUser.cs" />
     <Compile Include="Enums\Gender.cs" />
     <Compile Include="Enums\LetterGrades.cs" />
     <Compile Include="Enums\UserType.cs" />
-    <Compile Include="IUser.cs" />
-    <Compile Include="Lecture.cs" />
-    <Compile Include="LoginScreenController.cs" />
-    <Compile Include="LoginScreenManager.cs" />
-    <Compile Include="MainScreenController.cs" />
-    <Compile Include="MainScreenManager.cs" />
-    <Compile Include="Professor.cs" />
+    <Compile Include="Model\IUser.cs" />
+    <Compile Include="Model\Lecture.cs" />
+    <Compile Include="Pages\LoginPage\LoginScreenController.cs" />
+    <Compile Include="Pages\LoginPage\LoginScreenManager.cs" />
+    <Compile Include="Pages\MainPage\MainScreenController.cs" />
+    <Compile Include="Pages\MainPage\MainScreenManager.cs" />
+    <Compile Include="Model\Professor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="Model\Student.cs" />
+    <Compile Include="Model\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
