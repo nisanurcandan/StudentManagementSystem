@@ -33,8 +33,11 @@ namespace StudentManagementSystem
             }
             else
             {
-                Console.WriteLine("Yanliş girdiniz.");
-                // Tekrar giriniz.
+                Console.WriteLine("Invalid ID or password");
+                Console.WriteLine("Press any key to try again...");
+                var ans = Console.ReadLine();
+                LoginScreen();
+
             }
 
             
