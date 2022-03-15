@@ -16,5 +16,45 @@ namespace StudentManagementSystem.Pages.MainPage
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void myPersonalInfoButton_Click(object sender, EventArgs e)
+        {
+            MainScreenManager._instance.ShowMyPersonalInfo();
+        }
+
+        private void myAcademiInfoButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void myMessagesButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void getTopStudentInfoButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainScreen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void data_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

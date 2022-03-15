@@ -12,14 +12,15 @@ namespace StudentManagementSystem
 {
     class Program
     {
-
+        
 
         static void Main(string[] args)
         {
 
 
             DefaultData defaultData = new DefaultData();
-            Application.Run(new LoginScreen());
+            LoginScreenController._instance.Run();
+
 
 
             //Application.EnableVisualStyles();

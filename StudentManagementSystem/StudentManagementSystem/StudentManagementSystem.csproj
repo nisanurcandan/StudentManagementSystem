@@ -77,6 +77,12 @@
     </Compile>
     <Compile Include="Pages\LoginPage\LoginScreenController.cs" />
     <Compile Include="Pages\LoginPage\LoginScreenManager.cs" />
+    <Compile Include="Pages\MainPage\MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\MainPage\MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MainPage\MainScreenController.cs" />
     <Compile Include="Pages\MainPage\MainScreenManager.cs" />
     <Compile Include="Model\Professor.cs" />
@@ -103,6 +109,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Pages\LoginPage\LoginScreen.resx">
       <DependentUpon>LoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MainPage\MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

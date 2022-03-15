@@ -63,3 +63,4 @@ C:\Users\nsa52\Desktop\StudentManagementSystem\StudentManagementSystem\StudentMa
 C:\Users\nsa52\Desktop\StudentManagementSystem\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.CopyComplete
 C:\Users\User\Software\MertNisa\StudentManagementSystem\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.LoginScreen.resources
 C:\Users\User\Software\MertNisa\StudentManagementSystem\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.GenerateResource.cache
+C:\Users\User\Software\MertNisa\StudentManagementSystem\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.Pages.MainPage.MainScreen.resources

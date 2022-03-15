@@ -41,12 +41,12 @@ namespace StudentManagementSystem
             // 
             this.title.AutoSize = true;
             this.title.BackColor = System.Drawing.Color.LightGray;
-            this.title.Font = new System.Drawing.Font("Windows Command Prompt", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.Font = new System.Drawing.Font("Windows Command Prompt", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.title.ForeColor = System.Drawing.Color.SteelBlue;
-            this.title.Location = new System.Drawing.Point(219, 9);
+            this.title.Location = new System.Drawing.Point(217, 9);
             this.title.MaximumSize = new System.Drawing.Size(500, 500);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(332, 168);
+            this.title.Size = new System.Drawing.Size(342, 168);
             this.title.TabIndex = 0;
             this.title.Text = "STUDENT MANAGEMENT SYSTEM";
             this.title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -54,7 +54,7 @@ namespace StudentManagementSystem
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(321, 218);
+            this.textBox1.Location = new System.Drawing.Point(321, 227);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(171, 20);
             this.textBox1.TabIndex = 1;
@@ -62,7 +62,7 @@ namespace StudentManagementSystem
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(321, 244);
+            this.textBox2.Location = new System.Drawing.Point(321, 253);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(171, 20);
@@ -73,7 +73,7 @@ namespace StudentManagementSystem
             // 
             this.idInputBox.AutoSize = true;
             this.idInputBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.idInputBox.Location = new System.Drawing.Point(287, 218);
+            this.idInputBox.Location = new System.Drawing.Point(288, 227);
             this.idInputBox.Name = "idInputBox";
             this.idInputBox.Size = new System.Drawing.Size(27, 24);
             this.idInputBox.TabIndex = 3;
@@ -83,7 +83,7 @@ namespace StudentManagementSystem
             // 
             this.passwordInputBox.AutoSize = true;
             this.passwordInputBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.passwordInputBox.Location = new System.Drawing.Point(225, 244);
+            this.passwordInputBox.Location = new System.Drawing.Point(223, 253);
             this.passwordInputBox.Name = "passwordInputBox";
             this.passwordInputBox.Size = new System.Drawing.Size(92, 24);
             this.passwordInputBox.TabIndex = 4;
@@ -92,7 +92,7 @@ namespace StudentManagementSystem
             // loginButton
             // 
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.loginButton.Location = new System.Drawing.Point(336, 293);
+            this.loginButton.Location = new System.Drawing.Point(321, 294);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(87, 33);
             this.loginButton.TabIndex = 5;

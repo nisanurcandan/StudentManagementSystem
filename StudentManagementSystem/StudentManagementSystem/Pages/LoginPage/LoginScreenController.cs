@@ -1,4 +1,5 @@
 ﻿using StudentManagementSystem.Enums;
+using StudentManagementSystem.Pages.MainPage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +13,15 @@ namespace StudentManagementSystem
     class LoginScreenController
     {
         public static LoginScreenController _instance = new LoginScreenController();
-
+        private LoginScreen loginScreen = new LoginScreen();
 
         public LoginScreenController()
         {
+        }
+
+        public void Run()
+        {
+            Application.Run(loginScreen);
         }
 
         public void UserAuthentication(string id, string password)
@@ -23,11 +29,13 @@ namespace StudentManagementSystem
             bool isValid = LoginScreenManager._instance.UserAuthentication(id, password);
             if (isValid)
             {
-                MessageBox.Show("OK");
+                loginScreen.Hide();
+                MainScreen mainScreen = new MainScreen();
+                mainScreen.Show();
             }
             else
             {
-                MessageBox.Show("NO");
+                MessageBox.Show("Invalid ID or Password");
             }
 
             
