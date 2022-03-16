@@ -1,4 +1,5 @@
 ﻿using StudentManagementSystem.Enums;
+using StudentManagementSystem.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;

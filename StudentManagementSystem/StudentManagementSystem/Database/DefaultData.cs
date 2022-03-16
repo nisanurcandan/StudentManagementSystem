@@ -1,4 +1,6 @@
 ﻿using StudentManagementSystem.Enums;
+using StudentManagementSystem.Model;
+using StudentManagementSystem.Pages.MessagePage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +11,7 @@ namespace StudentManagementSystem
 {
     class DefaultData
     {
+        public static List<User> users = new List<User>();
         public static List<Professor> professors = new List<Professor>();
         public static List<Student> students = new List<Student>();
         public static List<Department> departments = new List<Department>();
@@ -74,6 +77,13 @@ namespace StudentManagementSystem
             Student std2 = new Student("Mert Sancar", "20192905004", "123" , "mert.sancar@std.yeditepe.edu.tr", dpt1,
                 2019, 2023, mertsLectures, mertLetterGrades, Gender.Male, "Turkish", DateTime.Parse("22.01.2001"));
 
+            //Message msg1 = new Message(std1, std2, "Naberrrrr", DateTime.Now);
+            //MessageManager._instance.SendMessage(msg1);
+
+            users.Add(pro1);
+            users.Add(pro2);
+            users.Add(std1);
+            users.Add(std2);
 
             professors.Add(pro1);
             professors.Add(pro2);

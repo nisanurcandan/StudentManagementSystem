@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentManagementSystem.Pages.MessagePage;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,7 +33,8 @@ namespace StudentManagementSystem
             Console.Clear();
             Console.WriteLine("1) Personal Informations");
             Console.WriteLine("2) Academic Informations");
-            Console.WriteLine("3) Back");
+            Console.WriteLine("3) Messages");
+            Console.WriteLine("4) Back");
             Console.WriteLine("Chose one of them");
             answer = Console.ReadLine();
             ShowNewScreenStudent();
@@ -43,8 +45,9 @@ namespace StudentManagementSystem
             Console.Clear();
             Console.WriteLine("1) My Personal Informations");
             Console.WriteLine("2) My Academic Informations");
-            Console.WriteLine("3) Get Top Student in University");
-            Console.WriteLine("4) Back");
+            Console.WriteLine("3) Messages");
+            Console.WriteLine("4) Get Top Student in University");
+            Console.WriteLine("5) Back");
             Console.WriteLine("Chose one of them");
             answer = Console.ReadLine();
             ShowNewScreenProfessor();
@@ -62,6 +65,9 @@ namespace StudentManagementSystem
                     MainScreenManager._instance.ShowMyAcademicInfo();
                     break;
                 case "3":
+                    MessageController._instance.MessageScreen();
+                    break;
+                case "4":
                     LoginScreenController._instance.LoginScreen();
                     break;
                 default:
@@ -82,9 +88,12 @@ namespace StudentManagementSystem
                     MainScreenManager._instance.ShowMyAcademicInfo();
                     break;
                 case "3":
-                    MainScreenManager._instance.GetTopStudentInfo();
+                    MessageController._instance.MessageScreen();
                     break;
                 case "4":
+                    MainScreenManager._instance.GetTopStudentInfo();
+                    break;
+                case "5":
                     LoginScreenController._instance.LoginScreen();
                     break;
                 default:
