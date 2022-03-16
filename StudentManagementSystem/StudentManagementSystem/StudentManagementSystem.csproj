@@ -69,6 +69,7 @@
     <Compile Include="Model\CurrentUser.cs" />
     <Compile Include="Model\IUser.cs" />
     <Compile Include="Model\Lecture.cs" />
+    <Compile Include="Model\Message.cs" />
     <Compile Include="Pages\LoginPage\LoginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +81,8 @@
     <Compile Include="Pages\MainPage\MainScreenController.cs" />
     <Compile Include="Pages\MainPage\MainScreenManager.cs" />
     <Compile Include="Model\Professor.cs" />
+    <Compile Include="Pages\MessagePage\MessageController.cs" />
+    <Compile Include="Pages\MessagePage\MessageManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Student.cs" />
