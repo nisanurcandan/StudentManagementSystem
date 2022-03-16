@@ -56,5 +56,10 @@ namespace StudentManagementSystem.Pages.MainPage
         {
 
         }
+
+        private void welcomeText_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

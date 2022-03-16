@@ -34,7 +34,7 @@ namespace StudentManagementSystem.Pages.MainPage
             this.myAcademiInfoButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.myMessagesButton = new System.Windows.Forms.Button();
-            this.welcomeUserText = new System.Windows.Forms.Label();
+            this.welcomeText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // myPersonalInfoButton
@@ -90,14 +90,16 @@ namespace StudentManagementSystem.Pages.MainPage
             this.myMessagesButton.UseVisualStyleBackColor = true;
             this.myMessagesButton.Click += new System.EventHandler(this.myMessagesButton_Click);
             // 
-            // welcomeUserText
+            // welcomeText
             // 
-            this.welcomeUserText.AutoSize = true;
-            this.welcomeUserText.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.welcomeUserText.Location = new System.Drawing.Point(12, 21);
-            this.welcomeUserText.Name = "welcomeUserText";
-            this.welcomeUserText.Size = new System.Drawing.Size(0, 34);
-            this.welcomeUserText.TabIndex = 6;
+            this.welcomeText.AutoSize = true;
+            this.welcomeText.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.welcomeText.Location = new System.Drawing.Point(13, 21);
+            this.welcomeText.Name = "welcomeText";
+            this.welcomeText.Size = new System.Drawing.Size(206, 34);
+            this.welcomeText.TabIndex = 6;
+            this.welcomeText.Text = "Welcome, User!";
+            this.welcomeText.Click += new System.EventHandler(this.welcomeText_Click);
             // 
             // MainScreen
             // 
@@ -105,7 +107,7 @@ namespace StudentManagementSystem.Pages.MainPage
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.welcomeUserText);
+            this.Controls.Add(this.welcomeText);
             this.Controls.Add(this.myMessagesButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.myAcademiInfoButton);
@@ -126,6 +128,6 @@ namespace StudentManagementSystem.Pages.MainPage
         private System.Windows.Forms.Button myAcademiInfoButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button myMessagesButton;
-        private System.Windows.Forms.Label welcomeUserText;
+        public System.Windows.Forms.Label welcomeText;
     }
 }

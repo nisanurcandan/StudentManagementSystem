@@ -31,6 +31,7 @@ namespace StudentManagementSystem
             {
                 loginScreen.Hide();
                 MainScreen mainScreen = new MainScreen();
+                mainScreen.welcomeText.Text = "Welcome, "+CurrentUser.currentUser.fullName.Split(' ')[0];
                 mainScreen.Show();
             }
             else
