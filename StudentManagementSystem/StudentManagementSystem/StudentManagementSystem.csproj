@@ -83,6 +83,7 @@
     <Compile Include="Model\Professor.cs" />
     <Compile Include="Pages\MessagePage\MessageController.cs" />
     <Compile Include="Pages\MessagePage\MessageManager.cs" />
+    <Compile Include="Pages\SetGradePage\SetGradeController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Student.cs" />
