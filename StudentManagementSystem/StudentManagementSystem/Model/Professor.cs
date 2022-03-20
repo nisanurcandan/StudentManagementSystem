@@ -52,8 +52,7 @@ namespace StudentManagementSystem
             for (int i = 0; i < lectures.Count; i++)
             {
                 Console.WriteLine("------------------------------------");
-                Console.WriteLine("Index          ID         Name         Is Online");
-                Console.WriteLine((i + 1) + lectures[i].id + "   " + lectures[i].Name + "   " + lectures[i].IsOnline);
+                Console.WriteLine("Index: "+ (i + 1) + " ID: " + lectures[i].id + " Name: " + lectures[i].Name + " Is Online: " + lectures[i].IsOnline);
             }
         }
 

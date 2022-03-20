@@ -1,4 +1,5 @@
 ﻿using StudentManagementSystem.Pages.MessagePage;
+using StudentManagementSystem.Pages.SetGradePage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,7 +48,8 @@ namespace StudentManagementSystem
             Console.WriteLine("2) My Academic Informations");
             Console.WriteLine("3) Messages");
             Console.WriteLine("4) Get Top Student in University");
-            Console.WriteLine("5) Back");
+            Console.WriteLine("5) Set Grade For Student");
+            Console.WriteLine("6) Back");
             Console.WriteLine("Chose one of them");
             answer = Console.ReadLine();
             ShowNewScreenProfessor();
@@ -94,6 +96,9 @@ namespace StudentManagementSystem
                     MainScreenManager._instance.GetTopStudentInfo();
                     break;
                 case "5":
+                    SetGradeController._instance.SetGradeScreen();
+                    break;
+                case "6":
                     LoginScreenController._instance.LoginScreen();
                     break;
                 default:
