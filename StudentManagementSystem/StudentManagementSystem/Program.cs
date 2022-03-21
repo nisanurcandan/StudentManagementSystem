@@ -27,7 +27,7 @@ namespace StudentManagementSystem
             //MySqlConnection cn;
             //MySqlCommand command;
 
-            //cn = new MySqlConnection("Datasource = mertnisa.mysql.database.azure.com;username=mertnisa@mertnisa;password=f_Fv3.nf:RDeFvz;database=StudentManagementSystem");
+            //cn = new MySqlConnection("Datasource = mertnisa.mysql.database.azure.com;username=mertnisa@mertnisa;password=;database=StudentManagementSystem");
             //cn.Open();
             //command = new MySqlCommand("Select * from User", cn);
             //MySqlDataReader rdr = command.ExecuteReader();
